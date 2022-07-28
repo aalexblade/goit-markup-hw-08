@@ -1,0 +1,53 @@
+  .servisces__title{
+    display: none;
+      
+  }
+  
+  .servisces__button{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+   
+  }
+  
+  .servisces__text-button{
+    margin-right: 8px;
+    
+  }
+  
+  .services .servisces__pointer:hover,
+  .services .servisces__pointer:focus {
+    color: var(--primery-button-colot);
+    background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+        
+  }
+    
+  .servisces__pointer{
+    cursor: pointer;
+    color: var(--primery-text-colot);
+    background-color:#F5F4FA;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px; 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+    
+  .service .title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 3;
+    letter-spacing: 0.06em;
+  
+  }
