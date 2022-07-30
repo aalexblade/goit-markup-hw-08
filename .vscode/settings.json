@@ -1,3 +1,20 @@
 {
-    "liveServer.settings.port": 5501
-}
+    "window.zoomLevel": 1,
+    "liveSassCompile.settings.formats": [
+  
+      {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/css",
+        "savePathReplacementPairs": null
+      },
+  
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/css",
+        "savePathReplacementPairs": null
+      }
+    ],
+    "workbench.iconTheme": "material-icon-theme"
+  }
