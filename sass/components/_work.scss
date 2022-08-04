@@ -1,56 +1,103 @@
- .work {
-    padding-top: 0;
-  
-  }
-    
-  .work__title {
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.16px;
-    letter-spacing: 0.03em;  
-    margin-bottom: 50px;
-    
-  }
-  
-  .work__desktop{
+//  .work {
+//    padding-top: 0;
+
+//    @media screen and (max-width: 1199px) {
+//      display: none;
+//    }
+//  }
+
+//  .work__title {
+//    text-align: center;
+//    font-size: 36px;
+//    line-height: 1.16px;
+//    letter-spacing: 0.03em;
+//    margin-bottom: 50px;
+
+//  }
+
+//  .work__desktop {
+//    display: flex;
+//    position: relative;
+//  }
+
+//  .work__text {
+//    font-style: normal;
+//    font-weight: 700;
+//    font-size: 14px;
+//    line-height: 1.14;
+//    text-align: center;
+//    letter-spacing: 0.03em;
+//    text-transform: uppercase;
+//    color: #FFFFFF;
+//    width: 100%;
+//    height: 70px;
+//    display: flex;
+//    justify-content: center;
+//    align-items: center;
+//    background: rgba(47, 48, 58, 0.8);
+//    bottom: 0;
+//    left: 0;
+//    position: absolute;
+
+//  }
+
+//  .work__list {
+//    list-style-type: none;
+//    display: flex;
+//  }
+
+//  .work__img {
+//    display: block;
+//    max-width: 100%;
+//    height: auto;
+
+//  }
+
+//  .work .work__images+.work__images {
+//    margin-left: 30px;
+//  }
+
+
+
+.work {
+  padding-top: 0;
+
+  &__list {
     display: flex;
-    position: relative;
+    @extend %list;
   }
-  
-  .work__text{
-    font-style: normal;
+
+  &__images {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  &__images:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+
+    color: #fff;
     background: rgba(47, 48, 58, 0.8);
-    bottom: 0;
-    left: 0;
-    position: absolute;
-  
   }
-  
-  .work__list {
-    list-style-type: none;
-    display: flex;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
   }
-  
-  .work__img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    
-  }
-  
-  .work .work__images + .work__images {
-    margin-left: 30px;
-  } 
-    
+}

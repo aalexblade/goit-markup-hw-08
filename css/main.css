@@ -143,7 +143,7 @@ img {
   overflow: hidden;
 }
 
-.advantage__list, .header__site-nav,
+.work__list, .advantage__list, .header__site-nav,
 .header__contact-site,
 .header__social-list {
   padding: 0;
@@ -881,63 +881,45 @@ img {
 .work {
   padding-top: 0;
 }
-
-.work__title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.16px;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.work__desktop {
+.work__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.work__images {
   position: relative;
+  margin-right: 30px;
 }
-
+.work__images:nth-child(3n) {
+  margin-right: 0;
+}
 .work__text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  width: 100%;
-  height: 70px;
+  position: absolute;
+  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 70px;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
   background: rgba(47, 48, 58, 0.8);
-  bottom: 0;
-  left: 0;
-  position: absolute;
 }
-
-.work__list {
-  list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.work__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.work .work__images + .work__images {
-  margin-left: 30px;
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
 }
 
 .team {
@@ -1505,4 +1487,12 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.work__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

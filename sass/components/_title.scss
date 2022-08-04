@@ -19,13 +19,11 @@
     @extend %visually-hidden;
 }
 
-// .services__title,
-// .team__title,
-// .clients__title {
-//     margin-bottom: 50px;
+.work__title {
+    margin-bottom: 50px;
 
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: 1.17;
-//     text-align: center;
-// }
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
