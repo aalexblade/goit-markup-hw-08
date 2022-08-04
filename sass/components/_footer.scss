@@ -1,88 +1,159 @@
- .footer {
-   background-color: #2F303A;
-   padding-top: 60px;
-   padding-bottom: 60px;
- }
+.footer__logo-link {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  color: var(--accent-color);
+}
 
- .footer__logo-color {
-   color: var(--logo-footer-color);
- }
-
-
- .footer__address-contact {
-   margin-bottom: 9px;
-   font-weight: normal;
- }
-
- .footer__contact {
-   padding-left: 0px;
-
- }
-
- .footer__address {
-   margin-top: 20px;
- }
-
- .footer__address-link {
-   color: var(--main-title-color);
-   text-decoration: none;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-
- }
+.footer__logo-color {
+  color: var(--logo-footer-color);
+}
 
 
- .footer__contact-link {
-   color: var(--tiele-text-color);
-   text-decoration: none;
-   font-style: normal;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.02em;
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
 
- }
+.footer__item {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 165px;
+  }
 
- .footer__join-text {
-   font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 1.14;
-   letter-spacing: 0.03em;
-   text-transform: uppercase;
-   margin-bottom: 20px;
-   color: #FFFFFF;
- }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+}
 
- .footer__join {
-   min-width: 206px;
- }
+.ffooter__address-contact {
+  margin-bottom: 9px;
+}
 
- .footer .social__item {
-   background-color: rgba(255, 255, 255, 0.1);
- }
+.ffooter__address-contact:last-child {
+  margin-bottom: 0;
+}
 
- .footer__item {
-   min-width: 231px;
-   margin-right: 70px;
- }
+.footer__contact {
+  display: inline-block;
+  @extend %list;
+}
+
+.footer__address-link {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: #fff;
+}
+
+.footer__contact-link {
+  display: inline-block;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--accent-color);
+  }
+}
+
+.footer__join-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer__container-address {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-right: 70px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.footer__join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+}
+
+.footer__join-social {
+  display: flex;
+  @extend %list;
+}
+
+.footer__join-social .footer__social+.footer__social {
+  margin-left: 10px;
+}
+
+.footer__social-item {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
 
- .footer .footer__join-social {
-   padding-left: 0px;
-   padding-right: 0px;
-   display: flex;
+}
 
- }
+.footer__link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 
- .footer .container {
-   display: flex;
-   align-items: baseline;
- }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
- .footer__join .social+.social {
-   margin-left: 10px;
- }
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: var(--accent-color);
+  }
+}
+
+.footer__social-icon {
+  display: block;
+  margin: auto;
+  height: 100%;
+  fill: #fff;
+}
