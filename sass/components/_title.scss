@@ -19,7 +19,8 @@
     @extend %visually-hidden;
 }
 
-.work__title {
+.work__title,
+.section__title {
     margin-bottom: 50px;
 
     font-weight: 700;
