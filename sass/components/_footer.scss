@@ -3,12 +3,16 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: inline-block;
+  margin-bottom: 20px;
+
   text-decoration: none;
   color: var(--accent-color);
 }
 
 .footer__logo-color {
   color: var(--logo-footer-color);
+
 }
 
 
@@ -34,11 +38,11 @@
   }
 }
 
-.ffooter__address-contact {
+.footer__address-contact {
   margin-bottom: 9px;
 }
 
-.ffooter__address-contact:last-child {
+.footer__address-contact:last-child {
   margin-bottom: 0;
 }
 
