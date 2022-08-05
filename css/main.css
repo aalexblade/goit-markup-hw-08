@@ -143,7 +143,8 @@ img {
   overflow: hidden;
 }
 
-.clients__list, .footer__join-social, .footer__contact, .team__list,
+.clients__list, .servisces__text-button,
+.portfolio-project, .footer__join-social, .footer__contact, .team__list,
 .team__social, .work__list, .advantage__list, .header__site-nav,
 .header__contact-site,
 .header__social-list {
@@ -161,7 +162,7 @@ img {
           align-items: center;
 }
 
-.clients__list, .team__list {
+.clients__list, .portfolio-project, .team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1255,47 +1256,193 @@ img {
   letter-spacing: 0.06em;
 }
 
-.portfolio-project {
+.servisces__button {
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px;
+  margin-bottom: 40px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .servisces__button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
-.portfolio-project-img {
-  display: block;
+.servisces__text-button {
+  margin-right: 8px;
+}
+
+.servisces__text-button:nth-child(5n) {
+  margin-right: 0;
+}
+
+.servisces__pointer {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.servisces__pointer:hover, .servisces__pointer:focus, .servisces__pointer:active {
+  background-color: var(--accent-color);
+  color: #fff;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-project {
+  gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-project {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio-project__inner {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  border-top: 20px;
-  border-right: 24px;
-  border-bottom: 20px;
-  border-left: 24px;
-  border: 1px solid #EEEEEE;
+  padding: 20px 24px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-project__inner {
+    padding: 20px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-project__inner--height {
+    padding-bottom: 56px;
+  }
 }
 
 .portfolio-project__title {
-  font-style: normal;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-bottom: 4px;
-  color: var(--primery-text-colot);
 }
 
-.services .portfolio-project__text {
-  color: var(--tiele-text-color);
-  font-weight: 400;
+.portfolio-project__text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
+  color: var(-tiele-text-color);
+}
+
+.portfolio__project-list {
+  display: inline-block;
+  width: 450px;
+  background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__project-list {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project-list {
+    width: 370px;
+  }
+}
+
+.portfolio__project-item {
+  display: block;
+  text-decoration: none;
+  color: var(--title-text-color);
+}
+.portfolio__project-item:hover {
+  outline: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  -webkit-transition-property: color, background-color, border, -webkit-box-shadow;
+  transition-property: color, background-color, border, -webkit-box-shadow;
+  transition-property: color, background-color, box-shadow, border;
+  transition-property: color, background-color, box-shadow, border, -webkit-box-shadow;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__project-overlay {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio__project-overlay-hover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__project-overlay-text {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
+  color: #fff;
+  padding: 73px 24px;
+  background: rgba(33, 150, 243, 0.9);
+}
+@media screen and (max-width: 320px) {
+  .portfolio__project-overlay-text {
+    padding: 12px 12px;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .portfolio__project-overlay-text {
+    padding: 24px 24px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .portfolio__project-overlay-text {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__project-overlay-text {
+    padding: 63px 24px;
+  }
+}
+
+.portfolio__project-item:hover .portfolio__project-overlay-hover {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .portfolio__project-item {
