@@ -1348,6 +1348,7 @@ img {
 }
 
 .portfolio__project-list {
+  display: block;
   display: inline-block;
   width: 450px;
   background: #fff;
