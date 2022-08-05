@@ -57,7 +57,7 @@
 }
 
 .portfolio-project__inner {
-  // flex-grow: 1;
+  flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
@@ -79,13 +79,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
 .portfolio-project__text {
   font-size: 16px;
   line-height: 1.88;
-
+  letter-spacing: 0.03em;
   color: var(--tiele-text-color);
 }
 
@@ -98,6 +98,8 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+
+
 
   }
 
