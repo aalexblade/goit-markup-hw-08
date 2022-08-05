@@ -91,6 +91,7 @@ img {
   .mobile-container {
     display: none;
     position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1320,9 +1321,6 @@ img {
 }
 
 .portfolio-project__inner {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   padding: 20px 24px;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
