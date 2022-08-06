@@ -175,6 +175,15 @@
 
 .header__button.is-open .icon-menu-open {
   display: none;
+
+}
+
+.header__button.is-open .header__button-icon {
+  display: block;
+  position: fixed;
+  z-index: 69;
+  right: 15px;
+  top: 10px;
 }
 
 

@@ -57,8 +57,9 @@
 }
 
 .portfolio-project__inner {
-  flex-grow: 1;
+
   padding: 20px 24px;
+  flex-grow: 1;
   border-left: 1px solid #eee;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -70,6 +71,7 @@
   &--height {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-bottom: 56px;
+
     }
   }
 }
@@ -79,10 +81,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
 }
 
 .portfolio-project__text {
+  display: flex;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -90,7 +93,10 @@
 }
 
 .portfolio__project-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
+  // display: block;
   display: inline-block;
   width: 450px;
 
@@ -110,10 +116,9 @@
 }
 
 .portfolio__project-item {
-  flex-direction: column;
-  height: 100%;
   display: flex;
-  display: block;
+  height: 100%;
+  flex-direction: column;
   text-decoration: none;
   color: var(--title-text-color);
 
